@@ -13,7 +13,7 @@ export const SiteSettings = () => {
   }, [setTheme, theme]);
   return (
     <div className="w-full flex items-center justify-between p-6 text-input dark:text-muted-foreground font-inter">
-      <span>Settings</span>
+      <span className="text-xs">Settings</span>
       <Button
         size={"xs"}
         variant={"outline"}
