@@ -15,7 +15,10 @@ export const Service = (service: IService) => {
         />
       </div>
       <div className="flex flex-1 py-4 h-3/5 items-end">
-        <Icon name={service.icon} className="size-12 stroke-0" />
+        <Icon
+          name={service.icon}
+          className="size-12 stroke-0 dark:text-accent fill-none"
+        />
       </div>
       <div className="text-xs h-1/5">{service.description}</div>
     </div>

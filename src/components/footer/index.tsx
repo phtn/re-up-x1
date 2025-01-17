@@ -1,12 +1,21 @@
+import { HyperList } from "../list";
+import { footer, IFooter } from "./schema";
+
 export const Footer = () => {
   return (
-    <footer className="grid grid-cols-3 w-full h-[193px] relative z-50 bg-primary border-primary/60 border-t">
-      {Array.from({ length: 3 }).map((_, i) => (
-        <div
-          key={i}
-          className="border-r last:border-r-0 h-full border-primary/60"
-        ></div>
-      ))}
+    <footer>
+      <HyperList
+        delay={0.36}
+        data={footer}
+        component={FooterItem}
+        container="grid grid-cols-3 w-full h-48 relative z-50 bg-primary dark:bg-primary-foreground dark:border-primary/10 border-primary/60 border-t"
+        itemStyle="h-full"
+        keyId="id"
+      />
     </footer>
   );
+};
+
+const FooterItem = (footer: IFooter) => {
+  return <footer.content />;
 };

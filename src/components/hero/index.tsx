@@ -78,11 +78,11 @@ const Hero = forwardRef<HTMLDivElement, HeroProps>(
   ) => {
     return (
       <div
-        className={cn("relative font-mona h-64 w-full", className)}
+        className={cn("relative font-mona w-full", className)}
         ref={ref}
         {...props}
       >
-        <div className="absolute top-0 z-[0] h-64 w-screen bg-foreground _bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(94,234,212,0.15),rgba(255,255,255,0))] dark:bg-orange-950/10 dark:bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(94,234,212,0.2),rgba(255,255,255,0))]" />
+        <div className="absolute top-0 z-[0] h-fit w-screen bg-foreground dark:bg-muted _bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(94,234,212,0.15),rgba(255,255,255,0))] _dark:bg-orange-950/10 _dark:bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(94,234,212,0.2),rgba(255,255,255,0))]" />
         <section className="z-1 relative mx-auto max-w-full">
           <RetroGrid {...gridOptions} />
           <div className="z-10 mx-auto max-w-screen-xl gap-12 px-4 py-16 md:px-8">
@@ -94,9 +94,9 @@ const Hero = forwardRef<HTMLDivElement, HeroProps>(
                 />
                 <span>{title}</span>
               </h1>
-              <h2 className="font-geist mx-auto dark:bg-[linear-gradient(180deg,_#000_0%,_rgba(0,_0,_0,_0.75)_100%)] bg-clip-text text-4xl tracking-tighter text-transparent md:text-6xl bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)]">
+              <h2 className="font-geist dark:text-primary/80 mx-auto dark:bg-[linear-gradient(180deg,_#000_0%,_rgba(0,_0,_0,_0.75)_100%)] bg-clip-text text-4xl tracking-tighter md:text-6xl bg-[linear-gradient(180deg,_#FFF_0%,_rgba(255,_255,_255,_0.00)_202.08%)]">
                 {subtitle.regular}
-                <span className="bg-gradient-to-r from-accent to-accent bg-clip-text text-transparent dark:from-teal-300 dark:to-orange-200">
+                <span className="text-accent dark:text-accent">
                   {subtitle.gradient}
                 </span>
               </h2>
