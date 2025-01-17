@@ -20,7 +20,7 @@ export const Service = (service: IService) => {
           className="size-12 stroke-0 dark:text-accent fill-none"
         />
       </div>
-      <div className="text-xs h-1/5">{service.description}</div>
+      <div className="text-xs h-1/5 opacity-60">{service.description}</div>
     </div>
   );
 };

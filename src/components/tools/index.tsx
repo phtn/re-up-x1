@@ -8,9 +8,9 @@ export const Tools = () => {
       <HyperList
         data={tools}
         component={Tool}
-        container="grid grid-cols-6 w-full h-14 relative z-50"
+        container="grid grid-cols-2 lg:grid-cols-6 w-full h-fit lg:h-14 relative z-50"
         keyId="id"
-        itemStyle="border-r dark:border-primary/10 flex items-center justify-center border-primary/60 last:border-r-0 h-full"
+        itemStyle="lg:border-r odd:border-r border-t lg:border-t-0 dark:border-primary/10  flex items-center justify-center border-primary/60 last:border-r-0 lg:h-full h-14"
         delay={0.16}
       />
     </section>

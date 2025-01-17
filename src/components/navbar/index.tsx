@@ -3,7 +3,7 @@ import Image from "next/image";
 export const Navbar = () => {
   return (
     <nav>
-      <div className="flex w-full h-16">
+      <div className="flex w-full ps-3 h-16">
         <Logo />
         <div className="flex items-center justify-center">
           <div className="h-9 w-10 whitespace-nowrap space-y-[1px] font-medium tracking-tight bg-muted/10">
@@ -23,7 +23,7 @@ export const Navbar = () => {
 
 const Logo = () => {
   return (
-    <div className="h-16 w-20 flex items-center justify-center">
+    <div className="h-16 w-16 flex items-center justify-center">
       <Image
         src="/svg/re-up-logo.svg"
         alt="re-up logomark"

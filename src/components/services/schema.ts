@@ -26,7 +26,8 @@ export const services: IService[] = [
   {
     id: 3,
     title: "Invoicing",
-    description: "Invoice your clients",
+    description:
+      "Generate shareable invoices with ease. Invoices comes with a secure payment link.",
     icon: "Invoice",
     href: "/invoicing",
   },
