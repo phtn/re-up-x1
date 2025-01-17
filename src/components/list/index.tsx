@@ -51,7 +51,7 @@ export const ListComponent = <T extends object>(props: HyperListProps<T>) => {
           key={key}
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: (j + 1 + delay) * 0.05 }}
+          transition={{ delay: (j + 1) * 0.05 + delay }}
           className={baseItemStyle}
         >
           <Item {...i} />
