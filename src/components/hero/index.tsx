@@ -82,7 +82,7 @@ const Hero = forwardRef<HTMLDivElement, HeroProps>(
         ref={ref}
         {...props}
       >
-        <div className="absolute top-0 z-[0] h-fit w-screen bg-foreground dark:bg-muted _bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(94,234,212,0.15),rgba(255,255,255,0))] _dark:bg-orange-950/10 _dark:bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(94,234,212,0.2),rgba(255,255,255,0))]" />
+        <div className="absolute z-[0] h-fit w-screen bg-foreground dark:bg-muted _bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(94,234,212,0.15),rgba(255,255,255,0))] _dark:bg-orange-950/10 _dark:bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(94,234,212,0.2),rgba(255,255,255,0))]" />
         <section className="z-1 relative mx-auto max-w-full">
           <RetroGrid {...gridOptions} />
           <div className="z-10 mx-auto max-w-screen-xl gap-12 px-4 py-16 md:px-8">

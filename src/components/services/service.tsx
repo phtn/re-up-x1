@@ -13,7 +13,7 @@ export const Service = (service: IService) => {
       className="size-full p-6 group-hover/list:bg-muted cursor-pointer leading-none font-mona transition-colors duration-300"
     >
       <div className="flex h-1/5 items-start justify-between">
-        <div className="h-6 flex items-center rounded-md px-2 text-base">
+        <div className="h-6 flex items-center px-2 font-bold tracking-tight text-lg">
           {service.title}
         </div>
         <Icon
@@ -21,13 +21,13 @@ export const Service = (service: IService) => {
           className="size-5 -translate-x-1 group-hover/list:translate-x-0 transition-transform duration-300"
         />
       </div>
-      <div className="flex flex-1 py-4 h-3/5 items-end">
+      <div className="flex flex-1 py-4 h-2/5 items-end">
         <Icon
           name={service.icon}
           className="size-12 stroke-0 dark:text-accent fill-none"
         />
       </div>
-      <div className="text-xs h-1/5 text-justify opacity-80">
+      <div className="text-sm h-2/5 text-justify flex items-center text-muted-foreground font-sans">
         {service.intro}
       </div>
       <ServicePreview open={open} toggleFn={toggle}>
@@ -47,7 +47,7 @@ export const Service = (service: IService) => {
               />
             </Button>
           </section>
-          <div className="px-6 py-4 text-sm text-justify font-sans text-secondary-foreground">
+          <div className="px-6 py-4 text-justify font-sans">
             {service.description}
           </div>
         </div>
